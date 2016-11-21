@@ -1,4 +1,4 @@
-True/False WIRIS question type
+WIRIS Quizzes - True/False question type
 [![Build Status](https://travis-ci.org/wiris/moodle-qtype_truefalsewiris.svg?branch=master)](https://travis-ci.org/wiris/moodle-qtype_truefalsewiris)
 
 The True/False WIRIS question type extends the Moodle True/False type, adding mathematical functionality to it.
