@@ -29,14 +29,17 @@ class qtype_truefalsewiris_edit_form extends qtype_wq_edit_form {
 
         parent::definition_inner($mform);
 
-        $wirishdr = $mform->createElement('header', 'wirishdr',
-                get_string('truefalsewiris_wiris_variables', 'qtype_truefalsewiris'));
+        $wirishdr = $mform->createElement('header',
+                                          'wirishdr',
+                                          get_string('truefalsewiris_wiris_variables', 'qtype_truefalsewiris'));
 
         $hdr = $mform->createElement('header', 'hdr', '');
 
         $wirisclassarray = array('class' => 'wirisauthoringfield wirisstudio wirismultichoice wirisvariables wirisauxiliarcas');
-        $wiristruefalse = $mform->createElement('text', 'wiristruefalse',
-                get_string('truefalsewiris_algorithm', 'qtype_truefalsewiris'), $wirisclassarray);
+        $wiristruefalse = $mform->createElement('text',
+                                                'wiristruefalse',
+                                                get_string('truefalsewiris_algorithm', 'qtype_truefalsewiris'),
+                                                $wirisclassarray);
 
         $wiriscorrectstring = get_string('truefalsewiris_correct_answer_variable', 'qtype_truefalsewiris');
         $wiriscorrect = $mform->createElement('text', 'wirisoverrideanswer', $wiriscorrectstring, array());
