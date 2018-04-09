@@ -22,5 +22,5 @@ $plugin->requires = 2011060313;
 $plugin->maturity = MATURITY_STABLE;
 $plugin->component = 'qtype_truefalsewiris';
 $plugin->dependencies = array (
-     'qtype_wq' => 2018030800
+     'qtype_wq' => 2018040900
 );
