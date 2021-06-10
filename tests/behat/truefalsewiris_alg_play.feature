@@ -3,24 +3,25 @@ Feature: A student can answer a Wiris Truefalse question type
   In order to answer the question
   As a student
   I need to select the correct answer
-Background:
-    Given the "wiris" filter is "on"
-    Given the "mathjaxloader" filter is "disabled"
-    Given the following "users" exist:
-      | username | firstname | lastname | email                |
-      | student1 | Student   | 1        | student1@example.com |
-    And the following "courses" exist:
-      | fullname | shortname | format |
-      | Course 1 | C1        | weeks  |
-    And the following "course enrolments" exist:
-      | user     | course | role    |
-      | student1 | C1     | student |
-    And the following "question categories" exist:
-      | contextlevel | reference | name           |
-      | Course       | C1        | Default for C1 |
-    And the following "questions" exist:
-      | questioncategory | qtype          | name            | template         |
-      | Default for C1   | truefalsewiris | Truefalse wiris | sciencetruefalse |
+  Background:
+      Given the "wiris" filter is "on"
+      Given the "mathjaxloader" filter is "disabled"
+      Given the following "users" exist:
+        | username | firstname | lastname | email                |
+        | student1 | Student   | 1        | student1@example.com |
+      And the following "courses" exist:
+        | fullname | shortname | format |
+        | Course 1 | C1        | weeks  |
+      And the following "course enrolments" exist:
+        | user     | course | role    |
+        | student1 | C1     | student |
+      And the following "question categories" exist:
+        | contextlevel | reference | name           |
+        | Course       | C1        | Default for C1 |
+      And the following "questions" exist:
+        | questioncategory | qtype          | name            | template         |
+        | Default for C1   | truefalsewiris | Truefalse wiris | sciencetruefalse |
+        
   @javascript
   Scenario: A student executes a truefalsewiris
       Given the following "activities" exist:

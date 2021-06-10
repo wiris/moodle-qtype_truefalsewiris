@@ -30,7 +30,7 @@ class behat_truefalsewiris_base extends behat_base {
     /**
      * @Then I choose the question type :questiontypename
      */
-    public function iChooseTheQuestionType($questiontypename) {
+    public function i_choose_the_question_type($questiontypename) {
         $this->execute('behat_forms::i_set_the_field_to', array($this->escape($questiontypename), 1));
         $this->execute("behat_general::i_click_on", array('.submitbutton', "css_element"));
     }

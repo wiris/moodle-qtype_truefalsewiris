@@ -42,5 +42,3 @@ Feature: A teacher creaters true false random
     And I click on "Preview" "link"
     And I switch to "questionpreview" window
     Then I should see "This is a Wiris True/False question"
-
-
