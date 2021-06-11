@@ -61,27 +61,38 @@ class qtype_truefalsewiris_test_helper extends question_test_helper {
         $form->responsetemplate = array('text' => '', 'format' => FORMAT_HTML);
 
         // Wiris specific information.
-        $form->wirisquestion = '<question><wirisCasSession><![CDATA[<wiriscalc version="3.2"><title><math xmlns="http://www.w3.org/1998/Math/MathML"><mtext>Untitled calc</mtext>
-                                </math></title><properties><property name="decimal_separator">.</property><property name="digit_group_separator"></property>
-                                <property name="float_format">mg</property><property name="imaginary_unit">i</property><property name="implicit_times_operator">false</property>
-                                <property name="item_separator">,</property><property name="lang">en</property><property name="precision">4</property>
-                                <property name="quizzes_question_options">true</property><property name="save_settings_in_cookies">false</property>
-                                <property name="times_operator">·</property><property name="use_degrees">false</property></properties><session version="3.0" lang="en"><task>
-                                <title><math xmlns="http://www.w3.org/1998/Math/MathML"><mtext>Sheet 1</mtext></math></title><group><command><input>
-                                <math xmlns="http://www.w3.org/1998/Math/MathML"><mi mathvariant="normal">a</mi><mo>=</mo><mi>random</mi><mfenced><mrow><mn>1</mn><mo>,</mo><mo>
-                                &#xA0;</mo><mn>500</mn></mrow></mfenced></math></input><output><math xmlns="http://www.w3.org/1998/Math/MathML"><mn>148</mn></math></output>
-                                </command><command><input><math xmlns="http://www.w3.org/1998/Math/MathML"><mi mathvariant="normal">r</mi><mo>=</mo><mi>false</mi></math></input>
-                                <output><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>false</mi></math></output></command><command><input>
-                                <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>if</mi><mo>&#xA0;</mo><mi>remainder</mi><mfenced><mrow><mi mathvariant="normal">a</mi>
-                                <mo>,</mo><mo>&#xA0;</mo><mn>2</mn></mrow></mfenced><mo>&#xA0;</mo><mo>==</mo><mo>&#xA0;</mo><mn>0</mn><mo>&#xA0;</mo><mi>then</mi>
-                                <mspace linebreak="newline" indentshift="1"/><mi mathvariant="normal">r</mi><mo>=</mo><mi>true</mi><mspace linebreak="newline" indentshift="0"/>
-                                <mi>end</mi></math></input><output><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>true</mi></math></output></command><command>
-                                <input><math xmlns="http://www.w3.org/1998/Math/MathML"/></input></command></group></task></session><constructions><construction group="1">
-                                {&quot;elements&quot;:[],&quot;constraints&quot;:[],&quot;displays&quot;:[],&quot;handwriting&quot;:[]}</construction>
-                                </constructions></wiriscalc>]]></wirisCasSession><correctAnswers><correctAnswer></correctAnswer></correctAnswers><assertions>
-                                <assertion name="syntax_math"/><assertion name="equivalent_symbolic"><param name="tolerance">0.001</param>
-                                <param name="tolerance_digits">false</param><param name="relative_tolerance">true</param></assertion></assertions><slots><slot>
-                                <initialContent></initialContent></slot></slots></question>';
+        $form->wirisquestion = '<question><wirisCasSession><![CDATA[<wiriscalc version="3.2"><title>
+                                <math xmlns="http://www.w3.org/1998/Math/MathML"><mtext>Untitled calc</mtext>
+                                </math></title><properties><property name="decimal_separator">.</property>
+                                <property name="digit_group_separator"></property>
+                                <property name="float_format">mg</property><property name="imaginary_unit">i</property>
+                                <property name="implicit_times_operator">false</property>
+                                <property name="item_separator">,</property><property name="lang">en</property>
+                                <property name="precision">4</property>
+                                <property name="quizzes_question_options">true</property><property name="save_settings_in_cookies">
+                                false</property><property name="times_operator">·</property><property name="use_degrees">false
+                                </property></properties><session version="3.0" lang="en"><task><title>
+                                <math xmlns="http://www.w3.org/1998/Math/MathML"><mtext>Sheet 1</mtext></math></title><group>
+                                <command><input><math xmlns="http://www.w3.org/1998/Math/MathML"><mi mathvariant="normal">a</mi>
+                                <mo>=</mo><mi>random</mi><mfenced><mrow><mn>1</mn><mo>,</mo><mo>&#xA0;</mo><mn>500</mn></mrow>
+                                </mfenced></math></input><output><math xmlns="http://www.w3.org/1998/Math/MathML"><mn>148</mn>
+                                </math></output></command><command><input><math xmlns="http://www.w3.org/1998/Math/MathML">
+                                <mi mathvariant="normal">r</mi><mo>=</mo><mi>false</mi></math></input><output>
+                                <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>false</mi></math></output></command><command>
+                                <input><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>if</mi><mo>&#xA0;</mo><mi>remainder
+                                </mi><mfenced><mrow><mi mathvariant="normal">a</mi><mo>,</mo><mo>&#xA0;</mo><mn>2</mn></mrow>
+                                </mfenced><mo>&#xA0;</mo><mo>==</mo><mo>&#xA0;</mo><mn>0</mn><mo>&#xA0;</mo><mi>then</mi>
+                                <mspace linebreak="newline" indentshift="1"/><mi mathvariant="normal">r</mi><mo>=</mo><mi>true</mi>
+                                <mspace linebreak="newline" indentshift="0"/><mi>end</mi></math></input><output>
+                                <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>true</mi></math></output></command><command>
+                                <input><math xmlns="http://www.w3.org/1998/Math/MathML"/></input></command></group></task>
+                                </session><constructions><construction group="1">
+                                {&quot;elements&quot;:[],&quot;constraints&quot;:[],&quot;displays&quot;:[],&quot;
+                                handwriting&quot;:[]}</construction></constructions></wiriscalc>]]></wirisCasSession>
+                                <correctAnswers><correctAnswer></correctAnswer></correctAnswers><assertions>
+                                <assertion name="syntax_math"/><assertion name="equivalent_symbolic"><param name="tolerance">0.001
+                                </param><param name="tolerance_digits">false</param><param name="relative_tolerance">true</param>
+                                </assertion></assertions><slots><slot><initialContent></initialContent></slot></slots></question>';
         $form->wirislang = 'en';
         $form->wiristruefalse = '';
         return $form;
