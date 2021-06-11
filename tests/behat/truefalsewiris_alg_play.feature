@@ -21,7 +21,7 @@ Feature: A student can answer a Wiris Truefalse question type
     And the following "questions" exist:
       | questioncategory | qtype          | name            | template         |
       | Default for C1   | truefalsewiris | Truefalse wiris | sciencetruefalse |
-        
+
   @javascript
   Scenario: A student executes a truefalsewiris
     Given the following "activities" exist:
