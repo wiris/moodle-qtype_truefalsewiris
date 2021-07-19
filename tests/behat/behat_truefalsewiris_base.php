@@ -13,14 +13,19 @@
 //
 // You should have received a copy of the GNU General Public License
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+/**
+ * Step definitions base class for science essay.
+ */
+/**
+ * This class provides necessary methods to run behat scripts for science essays.
+ * @package    question
+ * @subpackage truefalsewiris
+ * @copyright  WIRIS Europe (Maths for more S.L)
+ * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ */
+// NOTE: no MOODLE_INTERNAL test here, this file may be required by behat before including /config.php.
+require_once(__DIR__ . '/../../../../../lib/behat/behat_base.php');
 
-defined('MOODLE_INTERNAL') || die();
+class behat_truefalsewiris_base extends behat_base {
 
-$plugin->version = 2021050700;
-$plugin->release = '4.2.7';
-$plugin->requires = 2011060313;
-$plugin->maturity = MATURITY_RC;
-$plugin->component = 'qtype_truefalsewiris';
-$plugin->dependencies = array (
-     'qtype_wq' => 2021050700
-);
+}
