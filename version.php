@@ -16,11 +16,11 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$plugin->version = 2021091300;
-$plugin->release = '4.3.0';
+$plugin->version = 2021091500;
+$plugin->release = '4.3.1';
 $plugin->requires = 2011060313;
 $plugin->maturity = MATURITY_STABLE;
 $plugin->component = 'qtype_truefalsewiris';
 $plugin->dependencies = array (
-     'qtype_wq' => 2021091300
+     'qtype_wq' => 2021091500
 );
