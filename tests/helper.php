@@ -21,7 +21,7 @@
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
- /**
+/**
  * Test helper class for the Wiris TrueFalse question type.
  *
  * @copyright  2013 The Open University
