@@ -53,10 +53,21 @@ class qtype_truefalsewiris_question extends qtype_wq_question implements questio
 
     private function set_right_answer() {
         if (!empty($this->wirisoverrideanswer)) {
-            $wrap = com_wiris_system_CallWrapper::getInstance();
-            $wrap->start();
-            $this->rightanswer = $this->wirisquestioninstance->instance->getBooleanVariableValue($this->wirisoverrideanswer);
-            $wrap->stop();
+            $this->rightanswer = $this->is_variable_true($this->wirisoverrideanswer);
         }
+    }
+
+    private function is_variable_true($variable) {
+        if (substr($variable, 1) != "#") {
+            $variable = "#" . $variable;
+        }
+
+        $expanded = $this->expand_variables($variable, "text");
+
+        // This is ugly, but alternatives are more complicated and we are not adding CAS languages
+        // anytime soon.
+        $trues =  array("true", "cierto", "cert", "ziur", "vrai", "wahr", "vero", "waar", "verdadeiro", "certo");
+
+        return in_array($expanded, $trues)
     }
 }
