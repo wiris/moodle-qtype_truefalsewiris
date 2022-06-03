@@ -66,8 +66,8 @@ class qtype_truefalsewiris_question extends qtype_wq_question implements questio
 
         // This is ugly, but alternatives are more complicated and we are not adding CAS languages
         // anytime soon.
-        $trues =  array("true", "cierto", "cert", "ziur", "vrai", "wahr", "vero", "waar", "verdadeiro", "certo");
+        $trues = array("true", "cierto", "cert", "ziur", "vrai", "wahr", "vero", "waar", "verdadeiro", "certo");
 
-        return in_array($expanded, $trues)
+        return in_array($expanded, $trues);
     }
 }
