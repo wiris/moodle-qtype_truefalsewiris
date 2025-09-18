@@ -1,4 +1,4 @@
-@javascript @qtype_truefalsewiris @studentwiris
+@javascript @qtype_truefalsewiris @studentwiris @wqmdl-281
 Feature: Student answers a quiz with a True/False (WIRIS) question
 
     Background:
