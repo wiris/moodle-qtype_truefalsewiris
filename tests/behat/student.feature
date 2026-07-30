@@ -1,4 +1,4 @@
-@qtype_truefalsewiris @wq @javascript @student @attempt @regression
+@qtype @qtype_truefalsewiris @wq @javascript @student @attempt @regression
 Feature: Student answers a quiz with a True/False (WIRIS) question
 
     Background:
