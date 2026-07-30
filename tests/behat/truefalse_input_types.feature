@@ -1,4 +1,4 @@
-@qtype_truefalsewiris @wq @javascript @student @attempt @inputoptions @regression
+@qtype @qtype_truefalsewiris @wq @javascript @student @attempt @inputoptions @regression
 Feature: True/False (WIRIS) answer input option
     In order to trust the True/False (WIRIS) answer input
     As a student
